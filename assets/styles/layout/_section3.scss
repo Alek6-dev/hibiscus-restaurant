@@ -1,0 +1,61 @@
+.section3 {
+    height: 40vh;
+    min-height: 520px;
+
+    .reservation-container {
+        padding-top: 50px;
+        
+
+        .food {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 10%;
+            line-height: 40px;
+
+            h3 {
+                @include title;
+                color: #333333;
+                font-size: 1rem;
+                font-weight: 800;
+                letter-spacing: 1px;
+            }
+            h4 {
+                @include title;
+                text-transform: none;
+                color: #333333;
+                font-size: 0.9rem;
+                font-weight: 500;
+                letter-spacing: 1px;
+            }
+        }
+
+        .drink {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 10%;
+            line-height: 40px;
+            margin-top: 50px;
+
+            h3 {
+                @include title;
+                color: #333333;
+                font-size: 1rem;
+                font-weight: 800;
+                letter-spacing: 1px;
+            }
+            h4 {
+                @include title;
+                text-transform: none;
+                color: #333333;
+                font-size: 0.9rem;
+                font-weight: 500;
+                letter-spacing: 1px;
+            }
+        }
+    }
+    img {
+        width: 20px;
+    }
+}
