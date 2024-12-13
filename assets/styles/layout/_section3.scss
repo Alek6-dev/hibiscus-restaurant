@@ -2,16 +2,25 @@
     height: 40vh;
     min-height: 520px;
 
+    @media screen and (max-width: 800px) {
+        min-height: 800px;
+    }
+
     .reservation-container {
         padding-top: 50px;
-        
 
+        
+        
         .food {
             display: flex;
             justify-content: center;
             text-align: center;
             gap: 10%;
             line-height: 40px;
+            @media screen and (max-width: 800px) {
+                display: grid;
+                height: 460px;
+            }
 
             h3 {
                 @include title;
@@ -19,6 +28,9 @@
                 font-size: 1rem;
                 font-weight: 800;
                 letter-spacing: 1px;
+                @media screen and (max-width: 500px) {
+                    font-size: 0.8rem;
+                }
             }
             h4 {
                 @include title;
@@ -27,6 +39,9 @@
                 font-size: 0.9rem;
                 font-weight: 500;
                 letter-spacing: 1px;
+                @media screen and (max-width: 500px) {
+                    font-size: 0.7rem;
+                }
             }
         }
 
@@ -44,6 +59,9 @@
                 font-size: 1rem;
                 font-weight: 800;
                 letter-spacing: 1px;
+                @media screen and (max-width: 500px) {
+                    font-size: 0.8rem;
+                }
             }
             h4 {
                 @include title;
@@ -52,6 +70,9 @@
                 font-size: 0.9rem;
                 font-weight: 500;
                 letter-spacing: 1px;
+                @media screen and (max-width: 500px) {
+                    font-size: 0.7rem;
+                }
             }
         }
     }

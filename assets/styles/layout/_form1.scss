@@ -13,6 +13,11 @@
         .row1 {
             display: flex;
             justify-content: space-between;
+            @media screen and (max-width: 650px) {
+                flex-direction: column;
+                width: 100%;
+                justify-content: space-evenly
+            }
 
             input {
                 height: 45px;
@@ -25,6 +30,13 @@
                 font-family: $font2;
                 letter-spacing: 0.4px;
                 padding-left: 3%;
+                @media screen and (max-width: 650px) {
+                    width: 100%;
+                }
+                @media screen and (max-width: 400px) {
+                    border-radius: 7px;
+                    font-size: 0.7rem;
+                }
 
                 &:focus {
                     outline: 1px #c1cfe0 solid;
@@ -33,12 +45,25 @@
                     color: rgb(39, 39, 39);
                     font-family: $font2;
                     letter-spacing: 0.4px;
+                    @media screen and (max-width: 400px) {
+                        font-size: 0.7rem;
+                    }
                 }
             }
         }
         .row2 {
             display: flex;
             justify-content: space-between;
+
+            @media screen and (max-width: 650px) {
+                flex-direction: column;
+                width: 100%;
+                justify-content: space-evenly;
+                margin-top: -15px;
+            }
+            @media screen and (max-width: 400px) {
+                margin-top: -12px;
+            }
 
             input,
             select {
@@ -53,6 +78,14 @@
                 letter-spacing: 0.4px;
                 padding-left: 3%;
 
+                @media screen and (max-width: 650px) {
+                    width: 100%;
+                }
+                @media screen and (max-width: 400px) {
+                    border-radius: 7px;
+                    font-size: 0.7rem;
+                }
+
                 &:focus {
                     outline: 1px #c1cfe0 solid;
                 } 
@@ -60,6 +93,9 @@
                     color: rgb(39, 39, 39);
                     font-family: $font2;
                     letter-spacing: 0.4px;
+                    @media screen and (max-width: 400px) {
+                        font-size: 0.7rem;
+                    }
                 }
             }
         }
@@ -80,6 +116,11 @@
                 resize: none;
                 padding-top: 2%;
 
+                @media screen and (max-width: 400px) {
+                    border-radius: 7px;
+                    font-size: 0.7rem;
+                }
+
                 &:focus {
                     outline: 1px #c1cfe0 solid;
                 } 
@@ -87,12 +128,19 @@
                     color: rgb(39, 39, 39);
                     font-family: $font2;
                     letter-spacing: 0.4px;
+                    @media screen and (max-width: 400px) {
+                        font-size: 0.7rem;
+                    }
                 }
             }
 
         }
         h4 {
             @include text;
+            @media screen and (max-width: 650px) {
+                font-size: 0.8rem;
+                margin-bottom: 10px;
+            }
         }
         .checkbox-container {
             display: flex;
@@ -100,10 +148,13 @@
             align-items: center;
             width: 100%;
             margin-top: -100px;
+
+            @media screen and (max-width: 775px) {
+                margin-top: -50px;
+            }
             
             input {
                 margin-right: 20px;
-
             }
                 
             label {
@@ -112,6 +163,10 @@
                 display: inline-block;
                 text-align: justify;
                 width: 100%;
+                @media screen and (max-width: 650px) {
+                    font-size: 0.6rem;
+                    margin-top: 15px;
+                }
             }
         }
 
@@ -135,6 +190,14 @@
 
             @media screen and (max-width: 1024px) {
                 font-size: 1rem;
+            }
+            @media screen and (max-width: 875px) {
+                margin: 0 auto;
+                width: 200px;
+            }
+            @media screen and (max-width: 590px) {
+                height: 40px;
+                margin-top: 30px;
             }
 
             &::after {

@@ -9,7 +9,7 @@
     }
 
     .picture {
-        background: url(../assets/img/salle_restaurant.png);
+        background: url(./assets/img/salle_restaurant.png);
         background-position: center;
         background-size: cover;
         width: 34%;
@@ -17,6 +17,9 @@
 
         @media screen and (max-width:1070px) {
             width: 100%;
+        }
+        @media screen and (max-width: 630px) {
+            min-height: 500px;
         }
     }
     
@@ -35,6 +38,10 @@
             justify-content: center;
             gap: 20px;
         }
+        @media screen and (max-width: 630px) {
+            display: grid;
+            justify-items: center;
+        }
         
         
         .restaurant {
@@ -43,6 +50,10 @@
             flex-direction: column;
             align-items: center;
             text-align: justify;
+
+            @media screen and (max-width: 630px) {
+                width: 90%;
+            }
             
             img {
                 width: 40px;
@@ -61,6 +72,7 @@
                 @media screen and (max-width:1285px) {
                     font-size: 1.1rem;
                 }
+
             }
             p {
                 @include text;
@@ -104,6 +116,11 @@
             flex-direction: column;
             align-items: center;
             text-align: justify;
+
+            @media screen and (max-width: 630px) {
+                width: 90%;
+                margin-top: 50px;
+            }
             
             img {
                 width: 40px;
@@ -170,6 +187,11 @@
             flex-direction: column;
             align-items: center;
             text-align: justify;
+
+            @media screen and (max-width: 630px) {
+                width: 90%;
+                margin-top: 50px;
+            }
             
             img {
                 width: 40px;
