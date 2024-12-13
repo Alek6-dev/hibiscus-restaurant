@@ -84,6 +84,9 @@
                 @media screen and (max-width:450px) {
                     font-size: 1.3rem;
                 }
+                @media screen and (max-width:350px) {
+                    font-size: 1.1rem;
+                }
             }
             h3 {
                 @include text;
@@ -120,6 +123,9 @@
                 @media screen and (max-width:450px) {
                     font-size: 0.8rem;
                     letter-spacing: 0;
+                }
+                @media screen and (max-width:350px) {
+                    font-size: 0.6rem;
                 }
             }
             button {

@@ -1350,6 +1350,18 @@ header .header-content img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 650px) {
+  .form2 .form-container .row1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
 .form2 .form-container .row1 input {
   height: 45px;
   width: 100%;
@@ -1361,6 +1373,17 @@ header .header-content img {
   font-family: lato;
   letter-spacing: 0.4px;
   padding-left: 3%;
+}
+@media screen and (max-width: 650px) {
+  .form2 .form-container .row1 input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .form2 .form-container .row1 input {
+    border-radius: 7px;
+    font-size: 0.7rem;
+  }
 }
 .form2 .form-container .row1 input:focus {
   outline: 1px #c1cfe0 solid;
@@ -1398,6 +1421,24 @@ header .header-content img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 650px) {
+  .form2 .form-container .row2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-top: -25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .form2 .form-container .row2 {
+    margin-top: -23px;
+  }
+}
 .form2 .form-container .row2 input {
   height: 45px;
   width: 47%;
@@ -1409,6 +1450,17 @@ header .header-content img {
   font-family: lato;
   letter-spacing: 0.4px;
   padding-left: 3%;
+}
+@media screen and (max-width: 650px) {
+  .form2 .form-container .row2 input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .form2 .form-container .row2 input {
+    border-radius: 7px;
+    font-size: 0.7rem;
+  }
 }
 .form2 .form-container .row2 input:focus {
   outline: 1px #c1cfe0 solid;
@@ -1455,6 +1507,12 @@ header .header-content img {
   resize: none;
   padding-top: 2%;
 }
+@media screen and (max-width: 400px) {
+  .form2 .form-container .row3 textarea {
+    border-radius: 7px;
+    font-size: 0.7rem;
+  }
+}
 .form2 .form-container .row3 textarea:focus {
   outline: 1px #c1cfe0 solid;
 }
@@ -1483,6 +1541,23 @@ header .header-content img {
   font-family: lato;
   letter-spacing: 0.4px;
 }
+@media screen and (max-width: 400px) {
+  .form2 .form-container .row3 textarea::-webkit-input-placeholder {
+    font-size: 0.7rem;
+  }
+  .form2 .form-container .row3 textarea::-moz-placeholder {
+    font-size: 0.7rem;
+  }
+  .form2 .form-container .row3 textarea:-ms-input-placeholder {
+    font-size: 0.7rem;
+  }
+  .form2 .form-container .row3 textarea::-ms-input-placeholder {
+    font-size: 0.7rem;
+  }
+  .form2 .form-container .row3 textarea::placeholder {
+    font-size: 0.7rem;
+  }
+}
 .form2 .form-container h4 {
   font-family: lato;
   color: #464B62;
@@ -1500,6 +1575,11 @@ header .header-content img {
   width: 100%;
   margin-top: -100px;
 }
+@media screen and (max-width: 775px) {
+  .form2 .form-container .checkbox-container {
+    margin-top: -50px;
+  }
+}
 .form2 .form-container .checkbox-container input {
   margin-right: 20px;
 }
@@ -1510,6 +1590,12 @@ header .header-content img {
   display: inline-block;
   text-align: justify;
   width: 100%;
+}
+@media screen and (max-width: 650px) {
+  .form2 .form-container .checkbox-container label {
+    font-size: 0.6rem;
+    margin-top: 15px;
+  }
 }
 .form2 .form-container button {
   background: #464B62;
@@ -1540,6 +1626,18 @@ header .header-content img {
 @media screen and (max-width: 1024px) {
   .form2 .form-container button {
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 875px) {
+  .form2 .form-container button {
+    margin: 0 auto;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .form2 .form-container button {
+    height: 40px;
+    margin-top: 30px;
   }
 }
 .form2 .form-container button::after {
@@ -1805,6 +1903,7 @@ header .header-content img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1831,6 +1930,11 @@ header .header-content img {
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 665px) {
+  .section5 .main-container .lunch .right-part h2 {
+    font-size: 1.2rem;
+  }
+}
 .section5 .main-container .lunch .right-part p {
   font-family: cinzel;
   text-transform: uppercase;
@@ -1840,6 +1944,12 @@ header .header-content img {
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.5px;
+  text-align: center;
+}
+@media screen and (max-width: 665px) {
+  .section5 .main-container .lunch .right-part p {
+    font-size: 0.6rem;
+  }
 }
 .section5 .main-container .lunch .right-part .menu {
   display: grid;
@@ -1854,6 +1964,12 @@ header .header-content img {
   font-size: 1rem;
   font-weight: 800;
   letter-spacing: 1px;
+  text-align: center;
+}
+@media screen and (max-width: 665px) {
+  .section5 .main-container .lunch .right-part .menu h3 {
+    font-size: 0.8rem;
+  }
 }
 .section5 .main-container .lunch .right-part .menu h4 {
   font-family: cinzel;
@@ -1865,6 +1981,12 @@ header .header-content img {
   font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 1px;
+  text-align: center;
+}
+@media screen and (max-width: 665px) {
+  .section5 .main-container .lunch .right-part .menu h4 {
+    font-size: 0.7rem;
+  }
 }
 .section5 .main-container .lunch .right-part .details {
   margin-top: 30px;
@@ -1886,6 +2008,13 @@ header .header-content img {
   width: 30%;
   padding: 0 10px;
 }
+@media screen and (max-width: 665px) {
+  .section5 .main-container .lunch .right-part .details .entrée,
+  .section5 .main-container .lunch .right-part .details .plat,
+  .section5 .main-container .lunch .right-part .details .dessert {
+    padding: 0;
+  }
+}
 .section5 .main-container .lunch .right-part .details .entrée img,
 .section5 .main-container .lunch .right-part .details .plat img,
 .section5 .main-container .lunch .right-part .details .dessert img {
@@ -1905,6 +2034,13 @@ header .header-content img {
   letter-spacing: 1px;
   margin: 0 0 10px 0;
 }
+@media screen and (max-width: 665px) {
+  .section5 .main-container .lunch .right-part .details .entrée h3,
+  .section5 .main-container .lunch .right-part .details .plat h3,
+  .section5 .main-container .lunch .right-part .details .dessert h3 {
+    font-size: 0.7rem;
+  }
+}
 .section5 .main-container .lunch .right-part .details .entrée p,
 .section5 .main-container .lunch .right-part .details .plat p,
 .section5 .main-container .lunch .right-part .details .dessert p {
@@ -1915,6 +2051,13 @@ header .header-content img {
   text-transform: none;
   margin: 10px 0;
   line-height: 220%;
+}
+@media screen and (max-width: 665px) {
+  .section5 .main-container .lunch .right-part .details .entrée p,
+  .section5 .main-container .lunch .right-part .details .plat p,
+  .section5 .main-container .lunch .right-part .details .dessert p {
+    font-size: 0.5rem;
+  }
 }
 .section5 .main-container .dinner {
   width: 100%;
@@ -1969,6 +2112,12 @@ header .header-content img {
   font-weight: 800;
   letter-spacing: 1px;
   margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (max-width: 665px) {
+  .section5 .main-container .dinner .right-part h2 {
+    font-size: 1.2rem;
+  }
 }
 .section5 .main-container .dinner .right-part p {
   font-family: cinzel;
@@ -1979,6 +2128,12 @@ header .header-content img {
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.5px;
+  text-align: center;
+}
+@media screen and (max-width: 665px) {
+  .section5 .main-container .dinner .right-part p {
+    font-size: 0.6rem;
+  }
 }
 .section5 .main-container .dinner .right-part .menu {
   display: grid;
@@ -1993,6 +2148,12 @@ header .header-content img {
   font-size: 1rem;
   font-weight: 800;
   letter-spacing: 1px;
+  text-align: center;
+}
+@media screen and (max-width: 665px) {
+  .section5 .main-container .dinner .right-part .menu h3 {
+    font-size: 0.8rem;
+  }
 }
 .section5 .main-container .dinner .right-part .menu h4 {
   font-family: cinzel;
@@ -2004,6 +2165,12 @@ header .header-content img {
   font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 1px;
+  text-align: center;
+}
+@media screen and (max-width: 665px) {
+  .section5 .main-container .dinner .right-part .menu h4 {
+    font-size: 0.7rem;
+  }
 }
 .section5 .main-container .dinner .right-part .details {
   margin-top: 30px;
@@ -2025,6 +2192,13 @@ header .header-content img {
   width: 30%;
   padding: 0 10px;
 }
+@media screen and (max-width: 665px) {
+  .section5 .main-container .dinner .right-part .details .entrée,
+  .section5 .main-container .dinner .right-part .details .plat,
+  .section5 .main-container .dinner .right-part .details .dessert {
+    padding: 0;
+  }
+}
 .section5 .main-container .dinner .right-part .details .entrée img,
 .section5 .main-container .dinner .right-part .details .plat img,
 .section5 .main-container .dinner .right-part .details .dessert img {
@@ -2044,6 +2218,13 @@ header .header-content img {
   letter-spacing: 1px;
   margin: 0 0 10px 0;
 }
+@media screen and (max-width: 665px) {
+  .section5 .main-container .dinner .right-part .details .entrée h3,
+  .section5 .main-container .dinner .right-part .details .plat h3,
+  .section5 .main-container .dinner .right-part .details .dessert h3 {
+    font-size: 0.7rem;
+  }
+}
 .section5 .main-container .dinner .right-part .details .entrée p,
 .section5 .main-container .dinner .right-part .details .plat p,
 .section5 .main-container .dinner .right-part .details .dessert p {
@@ -2054,6 +2235,13 @@ header .header-content img {
   text-transform: none;
   margin: 10px 0;
   line-height: 220%;
+}
+@media screen and (max-width: 665px) {
+  .section5 .main-container .dinner .right-part .details .entrée p,
+  .section5 .main-container .dinner .right-part .details .plat p,
+  .section5 .main-container .dinner .right-part .details .dessert p {
+    font-size: 0.5rem;
+  }
 }
 .section5 img {
   width: 20px;
@@ -2228,8 +2416,24 @@ header .header-content img {
   height: 40vh;
   min-height: 520px;
 }
+@media screen and (max-width: 710px) {
+  .section7 {
+    min-height: 600px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .section7 {
+    min-height: 650px;
+  }
+}
 .section7 .reservation-container {
   margin-top: 40px;
+}
+@media screen and (max-width: 710px) {
+  .section7 .reservation-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 .section7 .reservation-container .food {
   display: -webkit-box;
@@ -2253,6 +2457,11 @@ header .header-content img {
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 450px) {
+  .section7 .reservation-container .food h3 {
+    font-size: 0.8rem;
+  }
+}
 .section7 .reservation-container .food h4 {
   font-family: cinzel;
   text-transform: uppercase;
@@ -2264,6 +2473,11 @@ header .header-content img {
   font-weight: 500;
   letter-spacing: 1px;
 }
+@media screen and (max-width: 450px) {
+  .section7 .reservation-container .food h4 {
+    font-size: 0.7rem;
+  }
+}
 .section7 .reservation-container .food h5 {
   font-family: lato;
   color: #464B62;
@@ -2272,6 +2486,11 @@ header .header-content img {
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 1px;
+}
+@media screen and (max-width: 450px) {
+  .section7 .reservation-container .food h5 {
+    font-size: 0.7rem;
+  }
 }
 .section7 .reservation-container .drink {
   display: -webkit-box;
@@ -2298,6 +2517,11 @@ header .header-content img {
   font-weight: 800;
   letter-spacing: 1px;
 }
+@media screen and (max-width: 450px) {
+  .section7 .reservation-container .drink h3 {
+    font-size: 0.8rem;
+  }
+}
 .section7 .reservation-container .drink h4 {
   font-family: cinzel;
   text-transform: uppercase;
@@ -2309,6 +2533,11 @@ header .header-content img {
   font-weight: 500;
   letter-spacing: 1px;
 }
+@media screen and (max-width: 450px) {
+  .section7 .reservation-container .drink h4 {
+    font-size: 0.7rem;
+  }
+}
 .section7 .reservation-container .drink h5 {
   font-family: lato;
   color: #464B62;
@@ -2317,6 +2546,11 @@ header .header-content img {
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 1px;
+}
+@media screen and (max-width: 450px) {
+  .section7 .reservation-container .drink h5 {
+    font-size: 0.7rem;
+  }
 }
 .section7 .reservation-container .drink p {
   font-family: lato;
@@ -2450,6 +2684,11 @@ header .header-content img {
     font-size: 1.3rem;
   }
 }
+@media screen and (max-width: 350px) {
+  .section8 .main-container .content h2 {
+    font-size: 1.1rem;
+  }
+}
 .section8 .main-container .content h3 {
   font-family: lato;
   color: #464B62;
@@ -2494,6 +2733,11 @@ header .header-content img {
   .section8 .main-container .content p {
     font-size: 0.8rem;
     letter-spacing: 0;
+  }
+}
+@media screen and (max-width: 350px) {
+  .section8 .main-container .content p {
+    font-size: 0.6rem;
   }
 }
 .section8 .main-container .content button {
