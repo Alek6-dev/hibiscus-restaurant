@@ -35,6 +35,10 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center right 10%;
+
+                @media screen and (max-width: 920px) {
+                    display: none; 
+                }
             }
             
             .right-part {
@@ -45,6 +49,10 @@
                 justify-content: center;
                 align-items: center;
                 gap: 10px;
+
+                @media screen and (max-width: 920px) {
+                    width: 100%;
+                }
                 
                 &::after {
                     position: absolute;
@@ -154,6 +162,10 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center left 40%;
+
+                @media screen and (max-width: 920px) {
+                    display: none; 
+                }
             }
 
             .right-part {
@@ -165,6 +177,9 @@
                 margin-top: 30px;
                 gap: 10px;
 
+                @media screen and (max-width: 920px) {
+                    width: 100%;
+                }
 
                 h2 {
                     @include title;

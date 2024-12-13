@@ -12,10 +12,15 @@ footer {
     align-items: flex-start;
     padding: 20px;
 
+    @media screen and (max-width: 920px) {
+        height: 600px;
+    }
+
+    
     img {
         width: 40px;
     }
-
+    
     .main-container {
         display: flex;
         justify-content: space-around;
@@ -23,6 +28,12 @@ footer {
         max-width: 1400px;
         height: 100%;
         // padding-top: 40px;
+        
+        @media screen and (max-width: 920px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
         .list-page {
             display: flex;
@@ -31,9 +42,18 @@ footer {
             width: 30%;
             height: 100%;
 
+            @media screen and (max-width: 920px) {
+                display: none;
+            }
+
             img {
                 height: 150px;
                 width: auto;
+
+                @media screen and (max-width: 1024px) {
+                    height: 120px;
+                    width: auto;
+                }
             }
 
             ul {
@@ -56,13 +76,23 @@ footer {
             }
         }
         .logo {
-            width: 30%;
+            width: 80%;
             display: grid;
             justify-content: center;
             justify-items: center;
+
+            @media screen and (max-width: 920px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
             
             a {
                 margin-bottom: -50px;
+
+                @media screen and (max-width: 920px) {
+                    margin-bottom: 0;
+                }
                 img {
                     width: 200px;
                 }
@@ -73,6 +103,11 @@ footer {
                 justify-content: center;
                 align-items: center;
                 gap: 20px;
+                margin-top: -70px;
+
+                @media screen and (max-width: 920px) {
+                    margin-top: 0;
+                }
 
                 img:first-child {
                     width: 25%;
@@ -85,6 +120,7 @@ footer {
                     max-width: 220px;
                     height: auto;
                     max-height: auto;
+                    filter: invert(1);
                 }
 
             }
@@ -94,6 +130,10 @@ footer {
             display: grid;
             justify-content: center;
             text-align: center;
+
+            @media screen and (max-width: 920px) {
+                width: 80%;
+            }
 
             .text {
                 display: flex;
@@ -105,6 +145,10 @@ footer {
                     font-size: 1rem;
                     font-weight: 400;
                     padding-top: 50px;
+
+                    @media screen and (max-width: 1024px) {
+                        font-size: 0.9rem;
+                    }
                 }
             }
             .icon {

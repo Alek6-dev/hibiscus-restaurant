@@ -1,6 +1,7 @@
 nav {
     height: 20vh;
     width: 100%;
+    min-height: 200px;
 
     ul {
         height: 100%;
@@ -15,6 +16,10 @@ nav {
         }
 
         li {
+            @media screen and (max-width: 920px) {
+                display: none; 
+            }
+
             @include title;
             padding: 0 5px;
             font-size: 1.2rem;
@@ -39,6 +44,9 @@ nav {
 
             @media screen and (max-width:1070px) {
                 width: 140px;
+            }
+            @media screen and (max-width: 920px) {
+                width: 240px;
             }
         }
     }
